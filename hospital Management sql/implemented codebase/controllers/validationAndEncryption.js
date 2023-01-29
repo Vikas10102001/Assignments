@@ -1,5 +1,5 @@
-const bcrypt=require('bcryptjs')
-const validator=require('validator')
+const bcrypt = require("bcryptjs");
+const validator = require("validator");
 const sendValidationErrorResponse = (res, message) => {
   res.status(400).json({
     status: "failed",
@@ -27,11 +27,15 @@ exports.dataValidation = (req, res, next) => {
       "Please fill a valid phone number with a proper country code "
     );
 
-    var pattern = new RegExp("^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d).+$");
-  if (!pattern.test(req.body.password)) {
+  var pattern = new RegExp("^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d).+$");
+  if (
+    !pattern.test(req.body.password) ||
+    req.body.password.length < 8 ||
+    req.body.password.length > 15
+  ) {
     return sendValidationErrorResponse(
       res,
-      "Password must contain one upper character,one lower character and a number"
+      "Password must contain one upper character,one lower character and a number max length 15 and min length 8"
     );
   }
   next();

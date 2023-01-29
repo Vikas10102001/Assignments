@@ -53,7 +53,7 @@ exports.getAllPatient = (req, res, next) => {
     }
     res.status(200).json({
       status: "success",
-      results:result.length,
+      results: result.length,
       data: result,
     });
   });

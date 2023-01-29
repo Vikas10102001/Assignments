@@ -18,27 +18,6 @@ USE `hospital_management`;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `psychiatrists`
---
-
-DROP TABLE IF EXISTS `psychiatrists`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `psychiatrists` (
-  `PsychiatristId` int NOT NULL AUTO_INCREMENT,
-  `Name` varchar(50) NOT NULL,
-  `Email` varchar(40) NOT NULL,
-  `PhoneNumber` varchar(20) NOT NULL,
-  `HospitalId` int NOT NULL,
-  PRIMARY KEY (`PsychiatristId`),
-  UNIQUE KEY `Email` (`Email`),
-  UNIQUE KEY `registered_patient` (`Name`,`PhoneNumber`,`PsychiatristId`),
-  KEY `HospitalId` (`HospitalId`),
-  CONSTRAINT `psychiatrists_ibfk_1` FOREIGN KEY (`HospitalId`) REFERENCES `hospitals` (`HospitalId`)
-) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
 -- Dumping data for table `psychiatrists`
 --
 
@@ -57,4 +36,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-01-29 15:38:01
+-- Dump completed on 2023-01-29 16:27:11

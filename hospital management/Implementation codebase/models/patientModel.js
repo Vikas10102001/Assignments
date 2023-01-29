@@ -16,11 +16,11 @@ const patientSchema = new mongoose.Schema(
       type: String,
       lowercase: true,
       validate: [validator.isEmail, "Please enter a valid email"],
+      required: [true, "Please give your email"]
     },
     phoneNumber: {
       type: String,
       minlength: 10,
-      required: [true, "Please give a phone number"],
       //assuming both country code and phone no. are sent together
       validate: {
         validator: function (val) {
