@@ -1,0 +1,119 @@
+{
+  "fields": [
+    {
+      "name": "_id",
+      "path": "_id",
+      "count": 4,
+      "types": [
+        {
+          "name": "ObjectID",
+          "bsonType": "ObjectID",
+          "path": "_id",
+          "count": 4,
+          "values": [
+            "63d3ce6b8a461750c9da0fc0",
+            "63d3cf638a461750c9da0fc3",
+            "63d3cf128a461750c9da0fc1",
+            "63d3cfd08a461750c9da0fc6"
+          ],
+          "total_count": 0,
+          "probability": 1,
+          "unique": 4,
+          "has_duplicates": false
+        }
+      ],
+      "total_count": 4,
+      "type": "ObjectID",
+      "has_duplicates": false,
+      "probability": 1
+    },
+    {
+      "name": "name",
+      "path": "name",
+      "count": 4,
+      "types": [
+        {
+          "name": "String",
+          "bsonType": "String",
+          "path": "name",
+          "count": 4,
+          "values": [
+            "Apollo Hospitals",
+            "Indra Gandhi Institute of Medical Science (IGIMS)",
+            "Jawaharlal Nehru Medical College And Hospital",
+            "AIIMS-All India Institute Of Medical Science"
+          ],
+          "total_count": 0,
+          "probability": 1,
+          "unique": 4,
+          "has_duplicates": false
+        }
+      ],
+      "total_count": 4,
+      "type": "String",
+      "has_duplicates": false,
+      "probability": 1
+    },
+    {
+      "name": "psychiatrists",
+      "path": "psychiatrists",
+      "count": 4,
+      "types": [
+        {
+          "name": "Array",
+          "bsonType": "Array",
+          "path": "psychiatrists",
+          "count": 4,
+          "types": [
+            {
+              "name": "ObjectID",
+              "bsonType": "ObjectID",
+              "path": "psychiatrists",
+              "count": 20,
+              "values": [
+                "63d3e45484371d439e08fd9d",
+                "63d3e523f1830c1e2bf4f8ce",
+                "63d3e532f1830c1e2bf4f8d0",
+                "63d3e53ff1830c1e2bf4f8d2",
+                "63d3e550f1830c1e2bf4f8d4",
+                "63d3e6dfde7523a5639e88ef",
+                "63d3e6f0de7523a5639e88f1",
+                "63d3e6fade7523a5639e88f3",
+                "63d3e70bde7523a5639e88f7",
+                "63d3e715de7523a5639e88f9",
+                "63d3e668de7523a5639e88e3",
+                "63d3e675de7523a5639e88e5",
+                "63d3e68cde7523a5639e88e7",
+                "63d3e696de7523a5639e88e9",
+                "63d3e6a2de7523a5639e88eb",
+                "63d3e74ede7523a5639e88fb",
+                "63d3e759de7523a5639e88fd",
+                "63d3e763de7523a5639e88ff",
+                "63d3e76ede7523a5639e8901",
+                "63d3e77ade7523a5639e8903"
+              ],
+              "total_count": 0,
+              "probability": 1,
+              "unique": 20,
+              "has_duplicates": false
+            }
+          ],
+          "lengths": [
+            5,
+            5,
+            5,
+            5
+          ],
+          "total_count": 20,
+          "probability": 1,
+          "average_length": 5
+        }
+      ],
+      "total_count": 4,
+      "type": "Array",
+      "has_duplicates": false,
+      "probability": 1
+    }
+  ],
+  "count": 4
+}
