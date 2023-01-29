@@ -29,15 +29,17 @@
 
 # Api Endpoint details
 
-  routes          method       result
+  routes    -      method  -     result
 
-  /patient        POST        register new patient 
-  /patient        GET         get all patient
+  /patient   -     POST    -    register new patient
 
-  /psychiatrist   POST        register new psychiatrist
-  /psychiatrist   GET         get all psychiatrists
+  /patient    -   GET     -    get all patient
 
-  /hospital       GET         get Hospital details (name,patient count,psychiatrist count,array 
+  /psychiatrist  -  POST   -     register new psychiatrist
+  
+  /psychiatrist  -   GET     -    get all psychiatrists
+
+  /hospital    -   GET     -    get Hospital details (name,patient count,psychiatrist count,array 
                               containing psychiatrist details)
 
 

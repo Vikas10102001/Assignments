@@ -26,16 +26,18 @@
 
 # Api Endpoint details
 
-  routes                  method       result
+  routes           -      method   -     result
 
-  /api/v1/patient         POST        register new patient 
-  /ap1/v1/patient         GET         get all patient
+  /api/v1/patient   -      POST    -    register new patient 
+  
+  /ap1/v1/patient    -     GET      -   get all patient
 
-  /ap1/v1psychiatrist     POST        register new psychiatrist
-  /api/v1psychiatrist     GET         get all psychiatrists
+  /ap1/v1psychiatrist  -   POST    -    register new psychiatrist
+  
+  /api/v1psychiatrist   -   GET    -     get all psychiatrists
 
-  /api/v1/hospital        GET         get Hospital details (name,patient count,psychiatrist count,  
-                                      array containing psychiatrist details)
+  /api/v1/hospital    -    GET      -   get Hospital details(name,patient count,psychiatrist count,  
+                                        array containing psychiatrist details)
                               
 
 # Postman Link
